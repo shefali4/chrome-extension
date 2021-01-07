@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Bank Extension",
+    "version": "1.0.0",
+  
+    "description": "Extension built to help young generation with financial literacy",
+    "icons": {"128": "icon.png"},
+  
+    
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"     
+    },
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    
+    "background":{
+        "scripts": ["background.js"]
+    }
+}
