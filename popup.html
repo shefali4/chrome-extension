@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="popup.css">
         <script src="popup.js"></script>
     </head>
+    
+
     <body>
-        <div><h1>Dictionary Positivity</h1></div>
+         <!--Format background image and title-->
+        <img src='background.png' style="width:100%; filter: brightness(50%); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="title">Dictionary Positivity</div>
+        <p></p>
+
+        <!--Text containing word, definition, and affirmating quotes-->
         <div>
+            <b>❓ Word:</b>
+            <p></p>
+            <b class="word" id="wordArea"></b>
+        </div> <p></p>
+        <div>
+            <b>📙 Definition:</b>
+            <p id="definitionArea">Highlight something to find its definition.</p>
+        </div> <br>
+        <div>
+            <b> ✨ Remember:</b>
             <p id="affirm">:)</p>
         </div>
-        <div>
-            <p>Definition:</p>
-            <p id="definitionArea">Highlight something to find its definition.</p>
-        </div>
+        <hr>
+      
+        <!--Google Search Link for unknown words-->
+        <a  href="http://www.google.com/" target="_blank">Search It!</a>
+        
     </body>
 </html>
