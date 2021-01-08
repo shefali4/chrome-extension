@@ -15,6 +15,19 @@ document.addEventListener('DOMContentLoaded', function showWordDef() {
     })
 });
 
+// document.addEventListener('DOMContentLoaded', function showWordDef() {
+//
+//     url = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}`+'?key=19a10fa7-7b46-4de5-b613-d1e62bd64aaa';
+//
+//     fetch(url)
+//     .then((response) => {
+//         return response.json();
+//     })
+//     .then((data) => {
+//         document.getElementById("definitionArea").innerText = data.shortdef;
+//     })
+// });
+
 document.addEventListener('DOMContentLoaded', function getAffirmation() {
 
     fetch('https://www.affirmations.dev/')
